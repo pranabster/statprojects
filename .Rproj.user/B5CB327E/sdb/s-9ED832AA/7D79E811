@@ -1,0 +1,18 @@
+{
+    "contents" : "#Data Types\n\n#================================================================\n#Vector - one dimensional array with elements from the same mode\n# 1 based index\n# Can contain only one data type - one mode\n#================================================================\n\na <- c(3,1,8,5,9)\nprint(a[1])\nprint(a[c(3,5)])\nprint(a[2:5])\n\n#================================================================\n#Matrices - two dimensional array with elements from the same mode\n#1 based index\n# Can contain only one data type\n#================================================================\n\nnumberMatrix <- matrix(1:10, nrow = 2)  \nnumberMatrix\n\nnumberMatrix[1]\nnumberMatrix[1,]\nnumberMatrix[,2]\nnumberMatrix[1,3]\nnumberMatrix[1,c(3,5)]\n\ncells <- c(1,26,24,68)\nrnames <- c(\"R1\", \"R2\")\ncnames <- c(\"C1\", \"C2\")\n\n#Create matrix arrange cells by row\nmymatrix <- matrix(cells, nrow=2, ncol=2, byrow=TRUE, dimnames=list(rnames, cnames))\nmymatrix\n\n#Create matrix arrange cells by column\nmymatrix <- matrix(cells, nrow=2, ncol=2, byrow=FALSE, dimnames=list(rnames, cnames))\nmymatrix\n\n\n#================================================================\n#Array\n# Arrays have more than 2 dimensions\n# Can contain only one data type\n#================================================================\nxdim <- c(\"x1\", \"x2\",\"x3\",\"x4\")\nydim <- c(\"y1\", \"y2\")\nzdim <- c(\"z1\", \"z2\", \"z3\")\nthreeDimArray <- array(1:24, dim = c(4,2,3), dimnames = list(xdim, ydim, zdim))\nthreeDimArray\n\nthreeDimArray[\"x1\",\"y1\",\"z2\"]\nthreeDimArray[\"x1\",,\"z3\"]\n\n#================================================================\n# Dataframes\n# Can contain only multimodal data\n#================================================================\npatientID <- c(1, 2, 3, 4)\nage <- c(25, 34, 28, 52)\ndiabetes <- c(\"Type1\", \"Type2\", \"Type1\", \"Type1\")           #Nominal data\nstatus <- c(\"Poor\", \"Improved\", \"Excellent\", \"Poor\")        #Ordinal data\npatientdata <- data.frame(patientID, age, diabetes, status)\n\npatientdata\nnames(patientdata)\n\ntable(patientdata$diabetes, patientdata$status)\n",
+    "created" : 1452137096499.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1298680701",
+    "id" : "7D79E811",
+    "lastKnownWriteTime" : 1452191091,
+    "path" : "C:/dev/MyProjects/statprojects/Chapter2_DataTypes.R",
+    "project_path" : "Chapter2_DataTypes.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

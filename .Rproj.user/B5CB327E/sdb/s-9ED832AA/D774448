@@ -1,0 +1,18 @@
+{
+    "contents" : "#Getting help from R\nhelp.start()\nhelp(\"rnorm\")\nhelp(rnorm)\n?rnorm\n\n#Search help system for the instances of string \"rnorm\"\nhelp.search(\"rnorm\")\n??rnorm\n\n#Examples of function rnorm\nexample(\"rnorm\")\n\n#List all available functions with rnorm in their name.\napropos(\"rnorm\", mode=\"function\")\n\n",
+    "created" : 1452197488876.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1542606684",
+    "id" : "D774448",
+    "lastKnownWriteTime" : 1452197723,
+    "path" : "C:/dev/MyProjects/statprojects/Chapter1_Get_help.R",
+    "project_path" : "Chapter1_Get_help.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

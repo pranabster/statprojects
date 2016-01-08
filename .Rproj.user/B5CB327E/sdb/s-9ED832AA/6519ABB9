@@ -1,0 +1,18 @@
+{
+    "contents" : "getwd()\nsetwd(\"C:/dev/MyProjects/statprojects\")\n\n#List the objects in the current workspace\nls()\n\n#Remove (delete) one or more objects\nage <- c(1,3,5,2,11,9,3,9,12,3)\nrm(age)\nrm(list = ls())\n\n#View or set current options.\noptions()\n\n#Display your last # commands (default = 25)  \nhistory(10)\n  \nage <- c(1,3,5,2,11,9,3,9,12,3)\nweight <- c(4.4,5.3,7.2,5.2,8.5,7.3,6.0,10.4,10.2,6.1)\nmean(weight)\nsd(weight)\ncor(age,weight)\nplot(age,weight)\n\n\n#Demo plots available in R\ndemo(graphics)\ndemo(Hershey)\ndemo(persp)\ndemo(image)\ndemo()\n\n\n",
+    "created" : 1452196232997.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "39646638",
+    "id" : "6519ABB9",
+    "lastKnownWriteTime" : 1452198185,
+    "path" : "C:/dev/MyProjects/statprojects/Chapter1_GetStarted.R",
+    "project_path" : "Chapter1_GetStarted.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
