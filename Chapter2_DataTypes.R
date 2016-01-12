@@ -57,13 +57,39 @@ threeDimArray["x1",,"z3"]
 # Dataframes
 # Can contain only multimodal data
 #================================================================
-patientID <- c(1, 2, 3, 4)
+patientID <- c(101, 102, 103, 104)
 age <- c(25, 34, 28, 52)
 diabetes <- c("Type1", "Type2", "Type1", "Type1")           #Nominal data
 status <- c("Poor", "Improved", "Excellent", "Poor")        #Ordinal data
 patientdata <- data.frame(patientID, age, diabetes, status)
+#patientdata <- data.frame(patientID, age, diabetes, status, row.names=patientID)
 
 patientdata
 names(patientdata)
 
+patientdata[2]
+patientdata[2:4]
+patientdata[c(2,3)]
+patientdata["age"]
+patientdata[c("age","diabetes")]
+
+#$ notation is used to indicate a particular variable from a given data frame
+patientdata$age
+patientdata$diabetes
+
+#cross tabulation
 table(patientdata$diabetes, patientdata$status)
+
+
+#example - Let's  
+rm(list = ls())
+
+mtcars
+
+summary(mtcars)
+plot(mtcars$mpg, mtcars$disp)
+plot(mtcars$wt, mtcars$mpg, main = "Plot for wt Vs mpg - mtcars inbuilt data", xlab = "Weight", ylab = "Milage", col.main = "blue", col.lab = "blue", cex.main = 1.2, cex.lab = 1.0, font.main = 4, font.lab = 3)
+
+attach(mtcars)
+plot(mpg, disp)
+detach(mtcars)
